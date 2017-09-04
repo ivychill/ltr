@@ -18,11 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="playGame.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="playGame.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/playGame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="71" column="31" lean-forward="true" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+            <state relative-caret-position="372">
+              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -33,8 +33,8 @@
       <file leaf-file-name="ddpg.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ddpg.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="119" column="51" lean-forward="true" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
+            <state relative-caret-position="229">
+              <caret line="53" column="32" lean-forward="false" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="32" />
               <folding>
                 <element signature="e#151#174#0" expanded="true" />
               </folding>
@@ -55,8 +55,8 @@
       <file leaf-file-name="my_config.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="55" lean-forward="false" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+            <state relative-caret-position="315">
+              <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
               <folding>
                 <element signature="e#16#39#0" expanded="true" />
               </folding>
@@ -64,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ltr.log" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ltr.log" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/log/ltr.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="11523" column="41" lean-forward="false" selection-start-line="11523" selection-start-column="37" selection-end-line="11523" selection-end-column="41" />
+            <state relative-caret-position="229">
+              <caret line="11912" column="70" lean-forward="false" selection-start-line="11912" selection-start-column="45" selection-end-line="11912" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -112,9 +112,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>math</find>
-      <find>logging.DEBUG</find>
-      <find>saveNetwork</find>
       <find>environment</find>
       <find>epsilon</find>
       <find>total_explore</find>
@@ -139,9 +136,12 @@
       <find>tanh</find>
       <find>optimi</find>
       <find>train_indicator</find>
+      <find>save</find>
       <find>Could not find old network weights</find>
       <find>action:</find>
-      <find>save</find>
+      <find>total_reward_test</find>
+      <find>Evaluation Average Reward</find>
+      <find>my_config.logger.debug</find>
     </findStrings>
     <replaceStrings>
       <replace>index</replace>
@@ -160,10 +160,10 @@
         <option value="$PROJECT_DIR$/err.log" />
         <option value="$PROJECT_DIR$/actor_network_bn.py" />
         <option value="$PROJECT_DIR$/actor_network.py" />
-        <option value="$PROJECT_DIR$/my_config.py" />
-        <option value="$PROJECT_DIR$/playGame.py" />
         <option value="$PROJECT_DIR$/ddpg.py" />
         <option value="$PROJECT_DIR$/log/ltr.log" />
+        <option value="$PROJECT_DIR$/my_config.py" />
+        <option value="$PROJECT_DIR$/playGame.py" />
       </list>
     </option>
   </component>
@@ -429,7 +429,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34964323" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23751274" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -752,20 +752,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playGame.py">
+    <entry file="file://$PROJECT_DIR$/log/ltr.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="71" column="31" lean-forward="true" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="229">
+          <caret line="11912" column="70" lean-forward="false" selection-start-line="11912" selection-start-column="45" selection-end-line="11912" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ddpg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="119" column="51" lean-forward="true" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
+        <state relative-caret-position="229">
+          <caret line="53" column="32" lean-forward="false" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="32" />
           <folding>
             <element signature="e#151#174#0" expanded="true" />
           </folding>
@@ -774,19 +772,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my_config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="55" lean-forward="false" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+        <state relative-caret-position="315">
+          <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
           <folding>
             <element signature="e#16#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/ltr.log">
+    <entry file="file://$PROJECT_DIR$/playGame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="11523" column="41" lean-forward="false" selection-start-line="11523" selection-start-column="37" selection-end-line="11523" selection-end-column="41" />
-          <folding />
+        <state relative-caret-position="372">
+          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

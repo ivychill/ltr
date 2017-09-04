@@ -46,30 +46,28 @@ def playGame():
             step += 1
             step_eps += 1
 
-        my_config.logger.debug("episode: %s, step_eps: %s, step: %s, reward: %s, replay buffer: %s" % (episode, step_eps, step, total_reward, agent.replay_buffer.count()))
-
-        # Testing:
-        if (train_indicator):
-            if episode % 100 == 0 and episode > 100:
-                total_reward_test = 0
-                for i in xrange(my_config.test_eps):
-                    state = env.reset()
-                    while not done:
-                        # env.render()
-                        action = agent.action(state)  # direct action for test
-                        state, reward, done, _ = env.step(action)
-                        total_reward_test += reward
-                        if done:
-                            break
-                ave_reward = total_reward_test / my_config.test_eps
-                my_config.logger.debug("Episode: %s, Evaluation Average Reward: %s" % (episode, ave_reward))
+        # my_config.logger.info("episode: %s, step_eps: %s, step: %s, reward: %s, replay buffer: %s" % (episode, step_eps, step, total_reward, agent.replay_buffer.count()))
 
         #Saving the best model.
         if total_reward >= best_reward :
             if (train_indicator):
-                my_config.logger.debug("Now we save model with reward %s, previous best reward was %s" % (str(total_reward), str(best_reward)))
+                my_config.logger.info("Now we save model with reward %s, previous best reward was %s" % (str(total_reward), str(best_reward)))
                 best_reward = total_reward
                 agent.saveNetwork()
+
+                total_reward_test = 0
+                for i in xrange(my_config.test_eps):
+                    state_test = env.reset()
+                    done_test = False
+                    while not done_test:
+                        # env.render()
+                        action_test = agent.action(state_test)  # direct action for test
+                        state_test, reward_test, done_test, _ = env.step(action_test)
+                        total_reward_test += reward_test
+                        my_config.logger.debug("test action: %s, reward: %s, total reward: %s" % (
+                        action_test, reward_test, total_reward_test))
+                ave_reward = total_reward_test / my_config.test_eps
+                my_config.logger.info("Episode: %s, Evaluation Average Reward: %s" % (episode, ave_reward))
 
     my_config.logger.warn("Finish...")
 
