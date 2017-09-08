@@ -7,13 +7,13 @@ import tensorflow as tf
 import numpy as np
 import os
 from ou_noise import OUNoise
-from critic_network import CriticNetwork 
+from critic_network_bn import CriticNetwork
 from actor_network_bn import ActorNetwork
 from replay_buffer import ReplayBuffer
 import my_config
 
-# Hyper Parameters:
 
+# Hyper Parameters:
 REPLAY_BUFFER_SIZE = 1000000
 REPLAY_START_SIZE = 10000
 BATCH_SIZE = 64
@@ -90,8 +90,11 @@ class DDPG:
     def noise_action(self,state):
         # Select action a_t according to the current policy and exploration noise
         action = self.actor_network.action(state)
-        # my_config.logger.debug("action: %s, noise: %s" % (action, self.exploration_noise.noise()))
-        return action + self.exploration_noise.noise()
+        noise = self.exploration_noise.noise()
+        noise_action = action + noise
+        clipped_noise_action = np.clip(noise_action, 0, 1)
+        # my_config.logger.debug("action: %s, noise: %s, clip: %s" % (action, noise, clipped_noise_action))
+        return clipped_noise_action
 
     def action(self,state):
         action = self.actor_network.action(state)

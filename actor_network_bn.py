@@ -7,9 +7,10 @@ import math
 # Hyper Parameters
 LAYER1_SIZE = 400
 LAYER2_SIZE = 300
-LEARNING_RATE = 1e-4
+LEARNING_RATE = 1e-3
 TAU = 0.001
-BATCH_SIZE = 64
+# BATCH_SIZE = 64
+
 
 class ActorNetwork:
 	"""docstring for ActorNetwork"""

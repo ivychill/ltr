@@ -14,6 +14,7 @@ def playGame():
     my_config.logger.warn("Opensim Experiment Start.")
     for episode in range(episode_count):
         s_t = env.reset()
+        # s_t = np.divide(s_t, env.observation_space.high)
         total_reward = 0.
         step_eps = 0.
         done = False
@@ -26,7 +27,9 @@ def playGame():
                 a_t = agent.action(s_t)
 
             s_t1, r_t, done, info = env.step(a_t)
-            # my_config.logger.debug("s_t1: %s" % (s_t1))
+            # my_config.logger.debug("before, s_t1: %s" % (s_t1))
+            # s_t1 = np.divide(s_t1, env.observation_space.high)
+            # my_config.logger.debug("after, s_t1: %s" % (s_t1))
 
             if (train_indicator):
                 agent.perceive(s_t,a_t,r_t,s_t1,done)
@@ -40,8 +43,8 @@ def playGame():
             total_reward += r_t
             s_t = s_t1
 
-            if (np.mod(step, 1000) == 0):
-                my_config.logger.debug("episode: %s, step: %s, action: %s, reward: %s" % (episode, step_eps, a_t, r_t))
+            # if (np.mod(step, 1000) == 0):
+            #     my_config.logger.debug("episode: %s, step: %s, action: %s, reward: %s" % (episode, step_eps, a_t, r_t))
 
             step += 1
             step_eps += 1
@@ -64,8 +67,7 @@ def playGame():
                         action_test = agent.action(state_test)  # direct action for test
                         state_test, reward_test, done_test, _ = env.step(action_test)
                         total_reward_test += reward_test
-                        my_config.logger.debug("test action: %s, reward: %s, total reward: %s" % (
-                        action_test, reward_test, total_reward_test))
+                        my_config.logger.debug("test action: %s, reward: %s, total reward: %s" % (action_test, reward_test, total_reward_test))
                 ave_reward = total_reward_test / my_config.test_eps
                 my_config.logger.info("Episode: %s, Evaluation Average Reward: %s" % (episode, ave_reward))
 
