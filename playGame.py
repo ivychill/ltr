@@ -2,9 +2,11 @@ from osim.env import *
 from ddpg import *
 import math
 
+# np.random.seed(1337)
+
 def playGame():
     train_indicator = my_config.is_training
-    env = RunEnv(visualize = False)
+    env = RunEnv(visualize = True)
     agent = DDPG(env)
 
     episode_count = my_config.max_eps
@@ -67,7 +69,7 @@ def playGame():
                         action_test = agent.action(state_test)  # direct action for test
                         state_test, reward_test, done_test, _ = env.step(action_test)
                         total_reward_test += reward_test
-                        my_config.logger.debug("test action: %s, reward: %s, total reward: %s" % (action_test, reward_test, total_reward_test))
+                        # my_config.logger.debug("test action: %s, reward: %s, total reward: %s" % (action_test, reward_test, total_reward_test))
                 ave_reward = total_reward_test / my_config.test_eps
                 my_config.logger.info("Episode: %s, Evaluation Average Reward: %s" % (episode, ave_reward))
 

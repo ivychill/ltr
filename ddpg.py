@@ -7,9 +7,11 @@ import tensorflow as tf
 import numpy as np
 import os
 from ou_noise import OUNoise
+# from OU import OU
 from critic_network_bn import CriticNetwork
 from actor_network_bn import ActorNetwork
 from replay_buffer import ReplayBuffer
+import random
 import my_config
 
 
@@ -39,8 +41,8 @@ class DDPG:
         self.replay_buffer = ReplayBuffer(REPLAY_BUFFER_SIZE)
 
         # Initialize a random process the Ornstein-Uhlenbeck process for action exploration
-        self.exploration_noise = OUNoise(self.action_dim)
-
+        # self.exploration_noise = OUNoise(self.action_dim)
+        self.exploration_noise = OUNoise()
         # loading networks
         self.saver = tf.train.Saver()
         checkpoint = tf.train.get_checkpoint_state(MODEL_PATH)
@@ -90,7 +92,13 @@ class DDPG:
     def noise_action(self,state):
         # Select action a_t according to the current policy and exploration noise
         action = self.actor_network.action(state)
-        noise = self.exploration_noise.noise()
+        noise = self.exploration_noise.noise(action)
+        # if random.random() <= 0.5:
+        #     noise = self.exploration_noise.noise(action,
+        #         mu=[-0.4, -0.4, -0.4, 0.4, -0.4, -0.4, -0.2, 0.2, 0.2, -0.4, -0.4, -0.4, -0.4, 0, 0, -0.4, -0.4, 0])
+        # else:
+        #     noise = self.exploration_noise.noise(action,
+        #         mu=[-0.4, -0.4, -0.4, -0.4, 0, 0, -0.4, -0.4, 0, -0.4, -0.4, -0.4, 0.4, -0.4, -0.4, -0.2, 0.2, 0.2])
         noise_action = action + noise
         clipped_noise_action = np.clip(noise_action, 0, 1)
         # my_config.logger.debug("action: %s, noise: %s, clip: %s" % (action, noise, clipped_noise_action))
@@ -115,8 +123,8 @@ class DDPG:
             #self.critic_network.save_network(self.time_step)
 
         # Re-iniitialize the random process when an episode ends
-        if done:
-            self.exploration_noise.reset()
+        # if done:
+        #     self.exploration_noise.reset()
 
     def saveNetwork(self):
         # my_config.logger.warn("time step: %s, save model" % (self.time_step))
