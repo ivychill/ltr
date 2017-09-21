@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f45abda1-9eab-4758-8ffa-b4159aae53bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/critic_network_bn.py" afterPath="$PROJECT_DIR$/critic_network_bn.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ddpg.py" afterPath="$PROJECT_DIR$/ddpg.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_config.py" afterPath="$PROJECT_DIR$/my_config.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ou_noise.py" afterPath="$PROJECT_DIR$/ou_noise.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playGame.py" afterPath="$PROJECT_DIR$/playGame.py" />
     </list>
@@ -21,14 +20,34 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="playGame.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="playGame.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/playGame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="61" lean-forward="true" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
+            <state relative-caret-position="477">
+              <caret line="35" column="53" lean-forward="true" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
               <folding>
-                <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#24#46#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ddpg.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ddpg.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ltr.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log/ltr.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="89" column="19" lean-forward="false" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -36,8 +55,8 @@
       <file leaf-file-name="actor_network_bn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/actor_network_bn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+            <state relative-caret-position="375">
+              <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -49,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/critic_network.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="61" column="63" lean-forward="true" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
+              <caret line="61" column="63" lean-forward="false" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -59,28 +78,20 @@
         <entry file="file://$PROJECT_DIR$/critic_network_bn.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="229">
-              <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="35" />
+              <caret line="71" column="8" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda2/envs/opensim-rl/lib/python2.7/site-packages/osim/env/run.py">
+      <file leaf-file-name="my_config.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my_config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="64" column="22" lean-forward="false" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ltr.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log/ltr.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205095">
-              <caret line="13673" column="0" lean-forward="false" selection-start-line="13673" selection-start-column="0" selection-end-line="13673" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="9" />
+              <folding>
+                <element signature="e#16#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,8 +99,8 @@
       <file leaf-file-name="ou_noise.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ou_noise.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+            <state relative-caret-position="312">
+              <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
               <folding>
                 <element signature="e#248#266#0" expanded="true" />
               </folding>
@@ -109,18 +120,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ddpg.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ddpg.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="95" column="36" lean-forward="true" selection-start-line="95" selection-start-column="36" selection-end-line="95" selection-end-column="36" />
-              <folding>
-                <element signature="e#151#174#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -132,36 +131,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>OrnsteinUhlenbeckProcess</find>
-      <find>restore</find>
-      <find>batch_norm_layer</find>
-      <find>debug</find>
-      <find>perceive</find>
-      <find>+00</find>
-      <find>Average</find>
-      <find>s_t</find>
-      <find>global</find>
-      <find>is_training</find>
-      <find>saveNetwork</find>
-      <find>seed</find>
-      <find>step</find>
-      <find>save</find>
-      <find>Average Reward</find>
-      <find>compute_reward</find>
-      <find>noise</find>
-      <find>time_step</find>
-      <find>0.5,</find>
-      <find>OUNoise</find>
-      <find>action:</find>
-      <find>exploration_noise</find>
-      <find>reset</find>
-      <find>tanh</find>
-      <find>L2</find>
       <find>mu:</find>
-      <find>BATCH_SIZE</find>
+      <find>gamma</find>
       <find>clip:</find>
+      <find>compute_reward</find>
       <find>state</find>
       <find>action:</find>
+      <find>concatenate</find>
+      <find>concat</find>
+      <find>BATCH_SIZE</find>
+      <find>state_batch</find>
+      <find>next_state_batch</find>
+      <find>L2</find>
+      <find>env.observation_space.shape[0]</find>
+      <find>state_dim</find>
+      <find>noise</find>
+      <find>GAMMA</find>
+      <find>agent.noise_action</find>
+      <find>04876121036937477</find>
+      <find>episode</find>
+      <find>-0.04694913027848661</find>
+      <find>44633</find>
+      <find>action:</find>
+      <find>best_reward</find>
+      <find>rewar</find>
+      <find>time_step</find>
+      <find>total_reward</find>
+      <find>save</find>
+      <find>reset</find>
+      <find>debug</find>
+      <find>get_batch</find>
     </findStrings>
     <replaceStrings>
       <replace>index</replace>
@@ -182,14 +181,15 @@
         <option value="$PROJECT_DIR$/example.py" />
         <option value="$PROJECT_DIR$/ltr.py" />
         <option value="$PROJECT_DIR$/actor_network.py" />
-        <option value="$PROJECT_DIR$/my_config.py" />
         <option value="$PROJECT_DIR$/log/x.log" />
         <option value="$PROJECT_DIR$/critic_network.py" />
-        <option value="$PROJECT_DIR$/playGame.py" />
         <option value="$PROJECT_DIR$/critic_network_bn.py" />
         <option value="$PROJECT_DIR$/actor_network_bn.py" />
-        <option value="$PROJECT_DIR$/log/ltr.log" />
+        <option value="$PROJECT_DIR$/my_config.py" />
         <option value="$PROJECT_DIR$/ou_noise.py" />
+        <option value="$PROJECT_DIR$/log/a.log" />
+        <option value="$PROJECT_DIR$/log/ltr.log" />
+        <option value="$PROJECT_DIR$/playGame.py" />
         <option value="$PROJECT_DIR$/ddpg.py" />
       </list>
     </option>
@@ -263,7 +263,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$USER_HOME$/exercise" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sigopt-examples" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -497,24 +497,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/actor_network.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="100" column="13" lean-forward="false" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/playGame_tensorflow.py" />
     <entry file="file://$PROJECT_DIR$/gym_torcs.py" />
     <entry file="file://$PROJECT_DIR$/snakeoil3_gym.py" />
@@ -655,16 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <element signature="e#16#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda2/envs/opensim-rl/lib/python2.7/site-packages/gym/core.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -689,56 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda2/envs/opensim-rl/lib/python2.7/site-packages/osim/env/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="64" column="22" lean-forward="false" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/ltr.log.1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="68" lean-forward="false" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/critic_network.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="61" column="63" lean-forward="true" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/critic_network_bn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/actor_network_bn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/ltr.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205095">
-          <caret line="13673" column="0" lean-forward="false" selection-start-line="13673" selection-start-column="0" selection-end-line="13673" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OU.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -757,33 +679,107 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/log/ltr.log.1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="68" lean-forward="false" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/envs/opensim-rl/lib/python2.7/site-packages/osim/env/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="64" column="22" lean-forward="false" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/critic_network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="61" column="63" lean-forward="false" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ou_noise.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        <state relative-caret-position="312">
+          <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
           <folding>
             <element signature="e#248#266#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ddpg.py">
+    <entry file="file://$USER_HOME$/anaconda2/envs/opensim-rl/lib/python2.7/site-packages/numpy/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="95" column="36" lean-forward="true" selection-start-line="95" selection-start-column="36" selection-end-line="95" selection-end-column="36" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/critic_network_bn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="71" column="8" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/a.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="74" column="24" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/ltr.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="89" column="19" lean-forward="false" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="9" />
           <folding>
-            <element signature="e#151#174#0" expanded="true" />
+            <element signature="e#16#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/playGame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="61" lean-forward="true" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
+        <state relative-caret-position="477">
+          <caret line="35" column="53" lean-forward="true" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#24#46#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/actor_network_bn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ddpg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>

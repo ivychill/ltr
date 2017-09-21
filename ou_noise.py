@@ -21,7 +21,7 @@ class OUNoise:
     # def reset(self):
     #     self.state = np.ones(self.action_dimension) * self.mu
 
-    def noise(self, x, mu=0, theta=0.5, sigma=0.15):
+    def noise(self, x, mu=0.5, theta=0.1, sigma=0.15):
         # x = self.state
         # dx = self.theta * (self.mu - x) + self.sigma * nr.randn(len(x))
         dw = nr.randn(len(x))

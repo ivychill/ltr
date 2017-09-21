@@ -8,8 +8,8 @@ import numpy as np
 import os
 from ou_noise import OUNoise
 # from OU import OU
-from critic_network_bn import CriticNetwork
-from actor_network_bn import ActorNetwork
+from critic_network import CriticNetwork
+from actor_network import ActorNetwork
 from replay_buffer import ReplayBuffer
 import random
 import my_config
@@ -19,7 +19,7 @@ import my_config
 REPLAY_BUFFER_SIZE = 1000000
 REPLAY_START_SIZE = 10000
 BATCH_SIZE = 64
-GAMMA = 0.99
+GAMMA = 0.995
 MODEL_PATH = './model'
 
 class DDPG:
@@ -28,7 +28,8 @@ class DDPG:
         self.environment = env
         # Randomly initialize actor network and critic network
         # with both their target networks
-        self.state_dim = env.observation_space.shape[0]
+        # self.state_dim = env.observation_space.shape[0]
+        self.state_dim = env.observation_space.shape[0] * 2
         self.action_dim = env.action_space.shape[0]
 
         self.time_step = 0
@@ -95,13 +96,14 @@ class DDPG:
         noise = self.exploration_noise.noise(action)
         # if random.random() <= 0.5:
         #     noise = self.exploration_noise.noise(action,
-        #         mu=[-0.4, -0.4, -0.4, 0.4, -0.4, -0.4, -0.2, 0.2, 0.2, -0.4, -0.4, -0.4, -0.4, 0, 0, -0.4, -0.4, 0])
+        #         mu=[0, 0, 0, 1, 0, 0, 0.25, 0.75, 0.75, 0, 0, 0, 0, 0.5, 0.5, 0, 0, 0.5])
         # else:
         #     noise = self.exploration_noise.noise(action,
-        #         mu=[-0.4, -0.4, -0.4, -0.4, 0, 0, -0.4, -0.4, 0, -0.4, -0.4, -0.4, 0.4, -0.4, -0.4, -0.2, 0.2, 0.2])
+        #         mu=[0, 0, 0, 0, 0.5, 0.5, 0, 0, 0.5, 0, 0, 0, 1, 0, 0, 0.25, 0.75, 0.75])
         noise_action = action + noise
         clipped_noise_action = np.clip(noise_action, 0, 1)
-        # my_config.logger.debug("action: %s, noise: %s, clip: %s" % (action, noise, clipped_noise_action))
+        # if (self.time_step < 5):
+        #     my_config.logger.debug("action: %s, noise: %s, clip: %s" % (action, noise, clipped_noise_action))
         return clipped_noise_action
 
     def action(self,state):
